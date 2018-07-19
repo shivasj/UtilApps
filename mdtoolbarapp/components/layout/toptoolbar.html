@@ -1,0 +1,45 @@
+<md-toolbar class="md-whiteframe-z1 ng-scope _md md-cyan-white-theme default _md-toolbar-transitions"
+            ng-if="vm.LayoutService.layout.showToolbar"
+            ng-class="[vm.LayoutService.layout.toolbarSize,vm.LayoutService.layout.toolbarClass]"
+            ng-style="vm.LayoutService.layout.toolbarStyle">
+    <div class="md-toolbar-tools">
+        <md-button class="md-icon-button" ng-if="!vm.hideMenuButton()" ng-click="vm.openSideNav('left')" aria-label="side navigation">
+            <md-icon md-font-icon="zmdi zmdi-menu"></md-icon>
+        </md-button>
+
+        <h3 flex>
+            <a ui-sref="app.home"><span class="app-title title1">Demo</span><span class="app-title title2">App</span></a>
+        </h3>
+
+        <md-button class="md-icon-button toolbar-button" ng-click="vm.toggleFullScreen()" aria-label="toggle fullscreen">
+            <md-icon md-font-icon ng-class="vm.fullScreenIcon"></md-icon>
+        </md-button>
+
+        <md-menu>
+            <md-button aria-label="Open user menu" ng-click="$mdOpenMenu()" aria-label="side navigation">
+                <md-icon md-font-icon="zmdi zmdi-account"></md-icon>
+            </md-button>
+            <md-menu-content width="4">
+                <md-menu-item>
+                    <md-button aria-label="side navigation">
+                        <md-icon md-font-icon="zmdi zmdi-settings"></md-icon>
+                        <span translate="Settings">Settings</span>
+                    </md-button>
+                </md-menu-item>
+                <md-menu-item>
+                    <md-button aria-label="side navigation">
+                        <md-icon md-font-icon="zmdi zmdi-account"></md-icon>
+                        <span translate="Profile">Profile</span>
+                    </md-button>
+                </md-menu-item>
+                <md-menu-divider></md-menu-divider>
+                <md-menu-item>
+                    <md-button aria-label="side navigation">
+                        <md-icon md-font-icon="zmdi zmdi-sign-in"></md-icon>
+                        <span translate="Logout">Logout</span>
+                    </md-button>
+                </md-menu-item>
+            </md-menu-content>
+        </md-menu>
+    </div>
+</md-toolbar>

@@ -1,0 +1,47 @@
+.scrollable-content{
+    background: #ececec;
+}
+.full-site-width{
+    margin: 0 auto;
+    max-width: 1400px;
+}
+
+.md-nav-bar {
+    border-width: 0 0 0px;
+}
+.md-nav-bar .md-button._md-nav-button.md-unselected {
+    color: #6b6b6b;
+}
+.md-button.md-accent {
+    color: #004466;
+}
+.md-nav-bar md-nav-ink-bar {
+    color: #004466;
+    background: #004466;
+}
+.md-caption{
+    color: #6b6b6b;
+}
+.md-icon-dark{
+    color: #6b6b6b;
+}
+
+.app-title{
+    color: #ffffff;
+    font-size: 16px;
+}
+.app-title.title1{
+    font-weight: 800 !important;
+}
+.app-title.title2{
+    font-weight: 500 !important;
+}
+.navbar-container{
+    /*margin-left: -40px;*/
+    /*margin-right: -40px;*/
+}
+.padded-content-page {
+    /*padding-left:  50px;*/
+}
+
+.hide-validation-error .md-errors-spacer { display: none; }

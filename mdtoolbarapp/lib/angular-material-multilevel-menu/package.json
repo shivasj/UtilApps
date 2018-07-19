@@ -1,0 +1,66 @@
+{
+  "_from": "angular-material-multilevel-menu",
+  "_id": "angular-material-multilevel-menu@1.5.0",
+  "_inBundle": false,
+  "_integrity": "sha1-rNzgZ7S7TRgA59nVTWB0eV+oit8=",
+  "_location": "/angular-material-multilevel-menu",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "angular-material-multilevel-menu",
+    "name": "angular-material-multilevel-menu",
+    "escapedName": "angular-material-multilevel-menu",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/angular-material-multilevel-menu/-/angular-material-multilevel-menu-1.5.0.tgz",
+  "_shasum": "acdce067b4bb4d1800e7d9d54d6074795fa88adf",
+  "_spec": "angular-material-multilevel-menu",
+  "_where": "/Sync/Development/002Javascript/npm_install",
+  "author": {
+    "name": "Juan Manuel",
+    "email": "jmouriz@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/jmouriz/angular-material-multilevel-menu/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "angular": "^1.6.5",
+    "angular-animate": "^1.6.5",
+    "angular-aria": "^1.6.5",
+    "angular-material": "^1.1.4",
+    "angular-material-badge": "^1.2.2",
+    "angular-material-icons": "^0.7.1",
+    "angular-messages": "^1.6.6",
+    "jquery": "^3.2.1",
+    "svg-morpheus": "^0.3.0"
+  },
+  "deprecated": false,
+  "description": "Material Multi-Level Menu for AngularJS",
+  "devDependencies": {
+    "angular-marked": "^1.2.2",
+    "angular-route": "^1.6.6",
+    "minify": "^3.0.1",
+    "prismjs": "^1.6.0"
+  },
+  "homepage": "https://github.com/jmouriz/angular-material-multilevel-menu#readme",
+  "license": "MIT",
+  "main": "angular-material-multilevel-menu.js",
+  "name": "angular-material-multilevel-menu",
+  "optionalDependencies": {
+    "angular-material-badge": "^1.2.2",
+    "svg-morpheus": "^0.3.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jmouriz/angular-material-multilevel-menu.git"
+  },
+  "version": "1.5.0"
+}

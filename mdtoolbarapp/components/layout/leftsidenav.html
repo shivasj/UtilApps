@@ -1,0 +1,8 @@
+<md-sidenav class="admin-sidebar-left md-sidenav-left hide-scrollbars md-whiteframe-z2"
+            md-component-id="left"
+            ng-if="vm.LayoutService.layout.sideMenuSize !== 'none'"
+            md-is-locked-open="vm.LayoutService.layout.sideMenuSize !== 'hidden' && $mdMedia('gt-sm')"
+            ng-class="{ 'admin-sidebar-collapsed': layout.sideMenuSize == 'icon' }"
+            ng-mouseover="vm.activateHover()"
+            ng-mouseleave="vm.removeHover()">
+</md-sidenav>

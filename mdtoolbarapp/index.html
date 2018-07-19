@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html ng-app="demo.app">
+<head>
+    <title>Demo</title>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- App Styles -->
+    <!--Font awesome -->
+    <script defer src="lib/fontawesome/svg-with-js/js/fontawesome-all.min.js"></script>
+    <!-- Angular Material style sheet -->
+    <link rel="stylesheet" href="lib/angular-material/angular-material.min.css">
+    <!-- Material Design Icons -->
+    <link rel="stylesheet" href="lib/material-design-iconic-font/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="lib/angular-material-icons/angular-material-icons.css">
+
+    <!--Main App CSS -->
+    <!-- build:css -->
+    <link rel="stylesheet" href="components/common/base.css">
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="components/layout/layout.css">
+    <link rel="stylesheet" href="components/common/md-multilvel-menu-subheader.css">
+    <!-- endbuild -->
+
+</head>
+<body ng-controller="AppController as appCtrl" class="os-windows">
+
+    <!-- main app view  -->
+    <div layout="row" class="full-height">
+        <!-- left sidebar -->
+        <div ui-view="sidebarLeft"></div>
+
+        <!-- main content -->
+        <div layout="column" flex>
+
+            <!-- top toolbar -->
+            <div ui-view="toolbar"></div>
+
+            <!-- nav toolbar -->
+            <div ui-view="navbar"></div>
+
+            <!-- scrollable content -->
+            <md-content flex ui-view="content" class="scrollable-content">
+
+            </md-content>
+
+            <!-- footer -->
+            <div ui-view="footer"></div>
+        </div>
+
+        <!-- right sidebar -->
+        <div ui-view="sidebarRight"></div>
+    </div>
+
+    <!-- Load JS libraries -->
+    <!--JQuery-->
+    <script type="text/javascript" src="lib/jquery/jquery.min.js"></script>
+
+    <!--Angular -->
+    <script type="text/javascript" src="lib/angular/angular.min.js"></script>
+    <script type="text/javascript" src="lib/angular/angular-animate.min.js"></script>
+    <script type="text/javascript" src="lib/angular/angular-sanitize.min.js"></script>
+    <script type="text/javascript" src="lib/angular/angular-aria.min.js"></script>
+    <script type="text/javascript" src="lib/angular/angular-messages.min.js"></script>
+    <script type="text/javascript" src="lib/angular-ui-router/angular-ui-router.min.js"></script>
+    <script type="text/javascript" src="lib/angular-local-storage/angular-local-storage.min.js"></script>
+    <!-- Angular Material Library -->
+    <script type="text/javascript" src="lib/angular-material/angular-material.min.js"></script>
+    <script type="text/javascript" src="lib/angular-material-icons/angular-material-icons.min.js"></script>
+
+    <!-- Load App libraries -->
+    <!-- build:appconfigjs -->
+    <script type="text/javascript" src="app.config.js"></script>
+    <!-- endbuild -->
+    <!-- build:js -->
+    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="components/common/common.js"></script>
+    <script type="text/javascript" src="components/common/md-multilevel-menu.js"></script>
+    <script type="text/javascript" src="components/common/angular-ui-load.js"></script>
+    <script type="text/javascript" src="components/layout/layout.js"></script>
+    <script type="text/javascript" src="components/home/home.js"></script>
+    <!-- endbuild -->
+
+</body>
+</html>
